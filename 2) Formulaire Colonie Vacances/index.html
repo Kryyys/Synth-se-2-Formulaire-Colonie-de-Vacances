@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Colonie de Vacances</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+<main>
+
+    <div id="bandeau">
+        <h1>Questionnaire de Colonie de Vacances</h1>
+    </div>
+
+    <form action="" method="post">
+
+        <!-- NOM -->
+        <div>
+            <label for="Nom">Votre nom </label>
+            <input type="text" name="Nom" pattern="[A-Z]{1,}$">
+        </div>
+
+        <!-- VILLE D'ORIGINE -->
+        <div>
+            <label for="Ville">Votre ville d'origine</label>
+            <input type="text" name="Ville">
+        </div>
+
+        <!-- SPORT -->
+        <div>
+            <label for="Sport">Choisir un sport :</label>
+            <input type="radio" name="sport" value="Basket"><label class="bold">Basket</label>
+            <input type="radio" name="sport" value="Rugby"><label class="bold">Rugby</label>
+            <input type="radio" name="sport" value="Volley"><label class="bold">Volley</label>
+        </div>
+
+        <!-- ACTIVITE -->
+        <div class="activite">
+            <label for="Activité">Choisir une activité :</label>
+            <input type="checkbox" name="Cinéma" ><label class="bold">Cinéma</label>
+            <input type="checkbox" name="Pêche"><label class="bold">Pêche</label>
+            <input type="checkbox" name="Maquette"><label class="bold">Maquette</label>
+            <input type="checkbox" name="Théâtre"><label class="bold">Théâtre</label>
+        </div>
+
+        <!-- EQUIPE -->
+        <div>
+            <label for="Equipe" class="padding">Couleur d'équipe</label>
+            <select name="Equipe">
+                <option value="">~Veuillez choisir une option~</option>
+                <option value="Bleu">Bleu</option>
+                <option value="Rouge">Rouge</option>
+                <option value="Jaune">Jaune</option>
+                <option value="Vert">Vert</option>
+            </select>
+        </div>
+    
+    
+    </form>
+
+</main>
+
+</body>
+</html>
